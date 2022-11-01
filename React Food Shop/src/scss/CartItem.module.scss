@@ -1,0 +1,39 @@
+@import './variables.scss';
+
+.inner {
+
+    h3 {
+        font-size: 16px;
+        color: $text-color-1;
+    }
+
+    .item {
+        background: $text-color-2;
+        border-radius: 30px;
+        padding: 25px 60px;
+        transition: $transition;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(245, 250, 255, 0.7);
+        }
+    }
+
+    .bottom {
+        margin-top: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        span {
+            color: $bg-1;
+            font-size: 20px;
+        }
+    }
+}

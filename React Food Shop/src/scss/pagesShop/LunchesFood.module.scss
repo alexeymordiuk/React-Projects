@@ -1,0 +1,79 @@
+@import '../variables.scss';
+
+.card {
+
+    h2 {
+        font-size: 18px;
+        color: $text-color-1;
+    }
+
+    .about {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+
+        span {
+            font-size: 18px;
+            color: $bg-1;
+        }
+    }
+
+    .text {
+        margin-bottom: 24px;
+
+        p {
+            color: $text-color-1;
+            font-size: $fs-text;
+            line-height: 133.8%;
+            font-weight: 500;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        span {
+            color: $bg-1;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    
+    .content {
+        padding: 0 30px;
+    }
+}
+
+.container {
+
+    .cart {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 15px;
+
+        span {
+            color: $bg-1;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+
+    .foods {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 89px;
+        margin-bottom: 140px;
+
+        @media (max-width: $tablet-size) {
+            margin-bottom: 50px;
+        }
+    
+        @media (max-width: $mobile-size) {
+           grid-template-columns: 1fr;
+        }
+    }
+}

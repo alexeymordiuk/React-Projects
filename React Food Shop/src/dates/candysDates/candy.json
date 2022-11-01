@@ -1,0 +1,46 @@
+[
+    {
+        "id": 0,
+        "img": "img/item.png",
+        "name": "Ginger candy with orange",
+        "text": "Ingredients: Dried almonds, honey dates, spicy ginger, orange, almond petals.Do not contain sugar!",
+        "about1":  "Proteins - 8",
+        "about2":  "Fats - 20",
+        "about3":  "Carbohydrates - 36",
+        "about4":  "346 kcal",
+        "price": 26
+    },
+    {
+        "id": 1,
+        "img": "img/item.png",
+        "name": "Ginger candy with orange",
+        "text": "Ingredients: Dried almonds, honey dates, spicy ginger, orange, almond petals.Do not contain sugar!",
+        "about1":  "Proteins - 8",
+        "about2":  "Fats - 20",
+        "about3":  "Carbohydrates - 36",
+        "about4":  "346 kcal",
+        "price": 26
+    },
+    {
+        "id": 2,
+        "img": "img/item.png",
+        "name": "Ginger candy with orange",
+        "text": "Ingredients: Dried almonds, honey dates, spicy ginger, orange, almond petals.Do not contain sugar!",
+        "about1":  "Proteins - 8",
+        "about2":  "Fats - 20",
+        "about3":  "Carbohydrates - 36",
+        "about4":  "346 kcal",
+        "price": 26
+    },
+    {
+        "id": 3,
+        "img": "img/item.png",
+        "name": "Ginger candy with orange",
+        "text": "Ingredients: Dried almonds, honey dates, spicy ginger, orange, almond petals.Do not contain sugar!",
+        "about1":  "Proteins - 8",
+        "about2":  "Fats - 20",
+        "about3":  "Carbohydrates - 36",
+        "about4":  "346 kcal",
+        "price": 26
+    }
+]

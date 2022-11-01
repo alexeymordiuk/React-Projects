@@ -1,0 +1,37 @@
+@import './variables.scss';
+.dishes {
+    margin-bottom: 150px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
+    .container {
+
+    @media (max-width: $tablet-size) {
+        margin-bottom: 100px;
+    }
+
+         .inner {
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .slide {
+            height: 570px;
+            cursor: pointer;
+
+            @media (max-width: $tablet-size) {
+                height: 404px;
+            }
+        }
+
+        :global {
+            .swiper-pagination {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+@import '../variables.scss';
+
+    .container {
+
+        .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            div {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+            }
+
+            h4 {
+                color: $text-color-1;
+                font-size: 18px;
+            }
+        }
+
+        .cart__price {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            p {
+                font-size: 18px;
+                color: $bg-1;
+            }
+        }
+
+    .card {
+
+        .content {
+            padding: 0 70px;
+
+            @media (max-width: $mobile-size) {
+                padding: 0;
+            }
+
+            h3 {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                line-height: 133.8%;
+                font-size: $fs-text;
+                margin-bottom: 10px;
+            }
+
+            .bzy {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 27px;
+            }
+
+            b {
+                font-size: 18px;
+
+                @media (max-width: $mobile-size) {
+                    font-size: $fs-text;
+                }
+            }
+
+            .by {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                justify-content: space-between;
+
+                @media (max-width: $mobile-size) {
+                   flex-direction: column;
+                   align-items: flex-start;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 26px;
+                }
+
+                span {
+                    font-size: 18px;
+                    color: $bg-1;
+                    font-weight: bold;
+                }
+            }
+
+        }
+    }
+}
+
+.prod {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 100px;
+
+    @media (max-width: $mobile-size) {
+        grid-template-columns: 1fr;
+    }
+
+}

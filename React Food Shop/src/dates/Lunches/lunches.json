@@ -1,0 +1,73 @@
+[
+    {
+        "id": 4,
+        "img": "img/lunches/1.png",
+        "name": "Business lunch “Fish”",
+        "gr": "250 g",
+        "kl": "346 kcal",
+        "text1": "1. Chicken broth with noodles and egg",
+        "text2":  "2. Fried rice with chicken",
+        "text3":  "3. Vegetable salad with basil-honey dressing",
+        "price": 189
+    },
+
+    {
+        "id": 5,
+        "img": "img/lunches/2.png",
+        "name": "Business lunch “Meat””",
+        "gr": "180 g",
+        "kl": "420 kcal",
+        "text1": "1. Chicken broth with noodles and egg",
+        "text2":  "2. Fried rice with chicken",
+        "text3":  "3. Vegetable salad with basil-honey dressing",
+        "price": 220
+    },
+
+    {
+        "id": 6,
+        "img": "img/lunches/1.png",
+        "name": "Business lunch “Fish”",
+        "gr": "250 g",
+        "kl": "346 kcal",
+        "text1": "1. Chicken broth with noodles and egg",
+        "text2":  "2. Fried rice with chicken",
+        "text3":  "3. Vegetable salad with basil-honey dressing",
+        "price": 189
+    },
+
+    {
+        "id": 7,
+        "img": "img/lunches/2.png",
+        "name": "Business lunch “Meat””",
+        "gr": "180 g",
+        "kl": "420 kcal",
+        "text1": "1. Chicken broth with noodles and egg",
+        "text2":  "2. Fried rice with chicken",
+        "text3":  "3. Vegetable salad with basil-honey dressing",
+        "price": 220
+    },
+
+    {
+        "id": 8,
+        "img": "img/lunches/1.png",
+        "name": "Business lunch “Fish”",
+        "gr": "250 g",
+        "kl": "346 kcal",
+        "text1": "1. Chicken broth with noodles and egg",
+        "text2":  "2. Fried rice with chicken",
+        "text3":  "3. Vegetable salad with basil-honey dressing",
+        "price": 189
+    },
+
+    {
+        "id": 9,
+        "img": "img/lunches/2.png",
+        "name": "Business lunch “Meat””",
+        "gr": "180 g",
+        "kl": "420 kcal",
+        "text1": "1. Chicken broth with noodles and egg",
+        "text2":  "2. Fried rice with chicken",
+        "text3":  "3. Vegetable salad with basil-honey dressing",
+        "price": 220
+    }
+]

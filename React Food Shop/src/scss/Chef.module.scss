@@ -1,0 +1,160 @@
+@import './variables.scss';
+
+.next {
+    margin-bottom: 30px;
+    
+    @media (max-width: $tablet-size) {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: $mobile-size) {
+        margin-bottom: 100px;
+    }
+    
+    .container {
+        z-index: 20;
+        
+        span {
+            color: $bg-1;
+        }
+
+        .inner {
+            display: flex;
+            align-items: center;
+            gap: 150px;
+            padding: 0 20px;
+            padding: 150px 0 100px 0;
+            cursor: pointer;
+
+            @media (max-width:$tablet-size) {
+                gap: 100px;
+                padding: 100px 0 100px 0;
+             }
+
+             @media (max-width: $mobile-size) {
+                flex-direction: column;
+                padding: 0 0 50px 0;
+                gap: 60px;
+            }
+
+            h1 {
+                font-size: 40px;
+                margin-bottom: 15px;
+
+                @media (max-width:$tablet-size) {
+                    font-size: 18px;
+                 }
+
+                 @media (max-width: $mobile-size) {
+                    max-width: 180px;
+                    font-size: 16px;
+                }
+            }
+
+            span {
+                color: $bg-1;
+            }
+
+            p {
+                font-size: 20px;
+                color: $text-color-1;
+                margin-bottom: 42px;
+
+                @media (max-width:$tablet-size) {
+                    font-size: 12px;
+                    max-width: 195px;
+                 }
+
+                 @media (max-width: $mobile-size) {
+                   margin-bottom: 10px;
+                }
+            }
+        }
+
+        .content {
+
+            @media (max-width:$tablet-size) {
+                flex: 0 1 50%;
+             }
+
+             @media (max-width: $mobile-size) {
+                order: 2;
+            }
+        }
+
+        .trial {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            @media (max-width:$tablet-size) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            small {
+                color: $bg-1;
+                font-size: 35px;
+            }
+        }
+
+        .circle {
+            width: 500px;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $text-color-2;
+            border-radius: 50%;
+
+            @media (max-width:$tablet-size) {
+               width: 400px;
+               height: 400px;
+               background-color: #fff;
+            }
+
+            @media (max-width: $mobile-size) {
+                width: 220px;
+                height: 220px;
+            }
+        }
+
+        .image {
+            position: absolute;
+            z-index: 50;
+            border-radius: 50%;
+            animation: round 15s linear infinite;
+            width: 450px;
+
+            @media (max-width:$tablet-size) {
+                width: 350px;
+            }
+
+            @media (max-width: $mobile-size) {
+                width: 190px;
+            }
+        }
+    }
+
+    @keyframes round {
+        from {
+            -webkit-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+          }
+          to {
+            -webkit-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+          }
+    }
+}  

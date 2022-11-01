@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: #F5FAFF;
+    overflow-x: hidden;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+}  
