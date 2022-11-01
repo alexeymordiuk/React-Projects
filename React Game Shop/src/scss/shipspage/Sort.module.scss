@@ -1,0 +1,52 @@
+@import '../Variables.scss';
+
+.sort {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    @media (max-width: 1260px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: $mb-size) {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 110px;
+        overflow: auto;
+        margin-bottom: 15px;
+
+        &::-webkit-scrollbar  {
+            background-color: $color-btn;
+            width: 7px;
+           }
+    
+           &::-webkit-scrollbar-thumb {
+            background-color: $color-white;
+            border-radius: 10px;
+           }
+    }
+
+    button {
+        display: inline-block;
+        padding: 10px 10px;
+        background: none;
+        border: 1px solid $color-orange;
+        color: $color-white;
+        transition: $transition;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-btn;
+            color: $color-orange;
+        }
+    }
+
+    .active {
+        background-color: $color-btn;
+        color: $color-orange;
+        transition: $transition;
+    }
+}

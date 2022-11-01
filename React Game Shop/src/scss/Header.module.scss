@@ -1,0 +1,201 @@
+@import './Variables.scss';
+
+.root {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+
+    .container {
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    .nav {
+        position: relative;
+
+        @media (max-width: 800px) {
+            display: none;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 25px;
+
+            @media (max-width: 1136px) {
+                gap: 15px;
+            }
+        }
+
+        .link {
+            font-size: $medium-text;
+            color: $color-white;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: $transition;
+            font-weight: bold;
+
+            &:hover {
+                color: $color-main;
+            }
+
+            @media (max-width: 1064px) {
+                font-size: 15px;
+            }
+
+            @media (max-width: 924px) {
+                font-size: $tb-text;
+            }
+        }
+
+        .active {
+            color: $color-orange;
+        }
+    }
+
+    .logo {
+        max-width: 200px;
+
+        @media (max-width: $tb-size) {
+            max-width: 150px;
+        }
+
+        @media (max-width: $mb-size) {
+            max-width: 120px;
+        }
+    }
+
+    .cart {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        @media (max-width: $mb-size) {
+            gap: 5px;
+        }
+
+        p {
+            font-size: $medium-text;
+            color: $color-white;
+            font-weight: bold;
+            transition: $transition;
+
+            &:hover {
+                color: $color-main;
+            }
+
+            @media (max-width: $tb-size) {
+                font-size: $tb-text;
+            }
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .curr {
+            font-size: 20px;
+            color: $color-white;
+        }
+    }
+        .btn {
+            display: none;
+            background: none;
+            font-size: 30px;
+            border: none;
+            cursor: pointer;
+            color: $color-white;
+
+            &:active {
+                color: $color-white;
+            }
+
+            @media (max-width: 800px) {
+                display: block;
+            }
+        }
+
+
+        .burger {
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            transform: translate(-130%);
+            top: 60px;
+            right: 0;
+            background-color: #000;
+            opacity: 0.7;
+            transition: $transition;
+            z-index: 20;
+
+            .menu {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                transition: $transition;
+                padding: 10px 15px 0 15px;
+            }
+
+            a {
+                width: 100%;
+                font-size: $medium-text;
+                flex-shrink: 1;
+                font-weight: bold;
+                color: $color-white;
+                padding: 10px 0 10px 10px;
+                transition: $transition;
+
+                &:hover {
+                    border: 2px solid #ff8400;
+                }
+
+                &:active {
+                    border: 2px solid #ff8400;
+                }
+            }
+        }
+
+    .active {
+        transform: translateX(0);
+    }
+
+
+    .close {
+        padding: 10px 10px 10px 15px;
+        font-size: 30px;
+        color: $color-white;
+
+        &:active {
+            color: red;
+        }
+    }
+
+    .user {
+        display: inline-flex;
+        background: none;
+        border: none;
+        color: $color-white;
+        font-size: 25px;
+        cursor: pointer;
+        transition: $transition;
+
+        &:hover {
+            color: $color-main;
+        }
+    }
+
+}

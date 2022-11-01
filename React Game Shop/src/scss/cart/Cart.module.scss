@@ -1,0 +1,214 @@
+@import '../Variables.scss';
+
+.empty {
+    background: rgb(31,9,52);
+    background: linear-gradient(0deg, rgba(31,9,52,1) 0%, rgba(95,56,175,1) 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .container {
+        width: 100%;
+        height: 600px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 20px;
+
+        h2 {
+            font-size: $title-text;
+            color: $color-white;
+        }
+
+        p {
+            font-size: $medium-text;
+            color: $color-white;
+            text-align: center;
+        }
+    }
+}
+
+
+.main {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: $mb-size) {
+        padding: 0;
+     }
+
+     .container {
+        padding: 100px 0;
+     }
+
+    .total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 50px;
+        padding: 15px;
+        border-radius: 20px;
+        border: 1px solid $color-white;
+        background: rgba(217, 217, 217, 0.1);
+
+        @media (max-width: $mb-size) {
+           flex-direction: column;
+           gap: 25px;
+        }
+
+        .buy {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            @media (max-width: $mb-size) {
+                flex-direction: column;
+                gap: 15px;
+             }
+        }
+    }
+
+    .count {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        p {
+            color: $color-white;
+            font-weight: bold;
+            font-size: $medium-text;
+        }
+
+        @media (max-width: $mb-size) {
+            flex-direction: row;
+            text-align: center;
+         }
+    }
+
+    .clear {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+        p {
+            color: $color-white;
+            font-weight: bold;
+            font-size: $medium-text;
+        }
+
+        button {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+            border: 1px solid $color-white;
+            border-radius: 50%;
+            color: $color-white;
+            font-size: $medium-text;
+            cursor: pointer;
+            transition: $transition;
+
+            &:active {
+                background-color: $color-btn;
+            }
+
+            &:hover {
+                background-color: $color-btn;
+            }
+        } 
+    }
+
+    .wrraper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        height: 390px;
+        overflow: auto;
+
+        &::-webkit-scrollbar  {
+            background-color: $color-btn;
+            width: 7px;
+           }
+    
+           &::-webkit-scrollbar-thumb {
+            background-color: $color-white;
+            border-radius: 10px;
+           }
+    
+
+        @media (max-width: 1300px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: 970px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: $mb-size) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.card {
+    border: 1px solid $color-white;
+    border-radius: 20px;
+    background: rgba(217, 217, 217, 0.1);
+
+    h2 {
+        font-size: $medium-text;
+        color: $color-white;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .content__card {
+        padding: 15px;
+    }
+
+    .classes {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        align-items: center;
+
+        h3 {
+            font-size: $small-text;
+            color: $color-white;
+            text-transform: uppercase;
+        }
+    }
+
+    .slots {
+        font-size: $small-text;
+        color: $color-white;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    .price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+
+        p {
+            font-size: $small-text;
+            color: $color-white;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+    }
+}

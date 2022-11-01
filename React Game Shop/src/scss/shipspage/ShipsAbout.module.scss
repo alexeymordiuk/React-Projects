@@ -1,0 +1,61 @@
+@import '../Variables.scss';
+
+.root {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+
+        @media (max-width: $tb-size) {
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+    }
+
+    .desc {
+        background-color: #120271;
+        font-weight: bold;
+        border-radius: 20px;
+        color: $color-white;
+        font-size: $medium-text;
+        padding: 5px 0 5px 10px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: $small-text;
+        color: $color-white;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+
+    .image {
+        border-radius: 20px;
+    }
+}
+
+.bg {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+:global {
+    .swiper-button-prev {
+        color: $color-orange;
+    }
+
+    .swiper-button-next {
+        color: $color-orange;
+    }
+}

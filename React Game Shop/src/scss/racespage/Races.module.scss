@@ -1,0 +1,78 @@
+@import '../Variables.scss';
+
+.card {
+
+    .title {
+        text-align: center;
+        font-size: $large-text;
+        font-weight: bold;
+        color: $color-white;
+        margin-bottom: 20px;
+    }
+
+
+    .content {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-bottom: 20px;
+
+        @media (max-width: $tb-size) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .about {
+
+        h3 {
+            font-size: $medium-text;
+            color: $color-white;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: $color-white;
+            font-size: $small-text;
+            margin-bottom: 15px;
+            line-height: 25px;
+        }
+    }
+
+    .bottom {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        gap: 20px;
+
+        @media (max-width: $tb-size) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .left {
+
+        h3 {
+            font-size: $medium-text;
+            color: $color-white;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: $color-white;
+            font-size: $small-text;
+            margin-bottom: 15px;
+            line-height: 25px;
+        }
+    }
+}
+
+.wrapper {
+    padding: 100px 0 20px 0;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,123 @@
+@import '../Variables.scss';
+
+.order {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .container {
+        padding: 100px 0 20px 0;
+        display: grid;
+        grid-template-columns: 10% 90%;
+        gap: 15px;
+
+        @media (max-width: 1260px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .ships {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        @media (max-width: $tb-size) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: $mb-size) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.about {
+    background: rgba(217, 217, 217, 0.1);
+    border-radius: 20px;
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: $medium-text;
+        color: $color-white;
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 10px 15px;
+    }
+
+    .ind {
+        font-size: $small-text;
+        font-weight: 500;
+        color: $color-white;
+        text-transform: uppercase;
+    }
+
+    .classes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pricing {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+
+        span {
+            font-size: $small-text;
+            font-weight: 500;
+            color: $color-white;
+            text-transform: uppercase;
+        }
+    }
+
+    .slots {
+        font-size: $small-text;
+        font-weight: 500;
+        color: $color-white;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+}
+
+.links {
+    padding: 0 0 50px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    a { 
+        color: $color-white;
+        font-size: 15px;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7px;
+        border: 1px solid $color-orange;
+        cursor: pointer;
+        transition: $transition;
+
+        &:hover {
+            background-color: $color-btn;
+        }
+    }
+
+    .selected {
+        background-color: $color-btn;
+    }
+}
+
+:global {
+    .selected a {
+        background-color: $color-btn;
+    }
+}

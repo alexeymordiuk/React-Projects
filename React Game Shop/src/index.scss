@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    background: linear-gradient(270deg, #644057 0, #5a3550 16.67%, #4d2847 33.33%, #3d183d 50%, #2d0834 66.67%, #20002c 83.33%, #170028 100%);
+
+    &::-webkit-scrollbar  {
+        background: linear-gradient(270deg, #644057 0, #5a3550 16.67%, #4d2847 33.33%, #3d183d 50%, #2d0834 66.67%, #20002c 83.33%, #170028 100%);
+        width: 7px;
+       }
+
+       &::-webkit-scrollbar-thumb {
+        background-color: white;
+        border-radius: 10px;
+       }
+}
+
+img {
+    max-width: 100%;
+}

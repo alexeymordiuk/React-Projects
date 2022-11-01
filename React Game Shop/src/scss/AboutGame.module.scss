@@ -1,0 +1,193 @@
+@import './Variables.scss';
+
+.about {
+
+    .first__content {
+        width: 100%;
+        min-height: 700px;
+        background-position: center center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-height: unset;
+
+        .pegi {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: -100px;
+            right: 100px;
+            gap: 15px;
+
+            div {
+                background-color: $color-white;
+                color: #000;
+                font-size: 45px;
+                width: 50px;
+                text-align: center;
+                font-weight: bold;
+                height: 50px;
+                border-radius: 15px;
+            }
+
+            p {
+                color: $color-white;
+                font-size: $small-text;
+            }
+        }
+    }
+
+    .container {
+        padding-top: 120px;
+        position: relative;
+    }
+
+    .content {
+
+        h2 {
+            font-size: 45px;
+            font-weight: normal;
+            color: $color-white;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            color: $color-white;
+            font-size: $medium-text;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .ps4 {
+            width: 50px;
+            text-align: center;
+            height: 20px;
+            border: 1px solid $color-white;
+            color: $color-white;
+            margin-bottom: 20px;
+        }   
+
+        span {
+            color: $color-white;
+            font-size: 40px;
+            font-weight: normal;
+        }
+
+        .buttons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .add {
+            display: inline-block;
+            padding: 10px 100px;
+            background: $color-main;
+            border-radius: 25px;
+            border: none;
+            color: $color-white;
+            font-weight: normal;
+            font-size: $medium-text;
+            transition: $transition;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $color-btn;
+            }
+        }
+
+        .like {
+            background: none;
+            border: none;
+            color: $color-white;
+            font-size: 35px;
+            transition: $transition;
+            cursor: pointer;
+
+            &:hover {
+                color: $color-main;
+            }
+        }
+
+        .release {
+            color: $color-white;
+            font-size: $medium-text;
+            font-weight: normal;
+        }
+
+        .play {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            div {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            p {
+                font-size: $small-text;
+                color: $color-white;
+            }
+
+            .icons {
+                font-size: $medium-text;
+                color: $color-white;
+            }
+        }
+
+    }
+
+    .info {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        h2 {
+            font-size: 35px;
+            font-weight: normal;
+            color: $color-white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .wrapper {
+            max-width: 80%;
+            padding: 0 15px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            padding-bottom: 70px;
+
+            @media (max-width: $tb-size) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media (max-width: $mb-size) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        .text__content {
+
+            h4 {
+                color: $color-white;
+                font-size: $title-text;
+                margin: 20px 0;
+                text-align: center;
+            }
+
+            p {
+                color: $color-white;
+                line-height: 22px;
+                font-size: $medium-text;
+                text-align: justify;
+            }
+        }
+    }
+}
