@@ -1,0 +1,56 @@
+.footer {
+	min-height: 200px;
+	max-width: 100%;
+	background-color: #0099cc;
+	margin-bottom: 20px;
+
+	.inner {
+		display: flex;
+		gap: 20px;
+		justify-content: space-between;
+		padding: 50px;
+
+		@media (max-width:623px) {
+			flex-direction: column;
+		}
+	}
+
+	.copy {
+		text-align: center;
+		padding-bottom: 20px;
+		color: #fff;
+	}
+
+	a {
+		color: #fff;
+		font-size: 18px;
+		padding-bottom: 10px;
+		transition: 0.2s ease-in-out;
+		&:hover {
+			color: black;
+		}
+	}
+
+	li {
+		color: #fff;
+		font-size: 18px;
+		padding-bottom: 10px;
+	}
+
+	h3 {
+		font-size: 24px;
+		color: black;
+		margin-bottom: 15px;
+	}
+
+	span {
+		color: black;
+		font-weight: bold;
+	}
+
+	.net {
+		display: block;
+		align-items: center;
+		gap: 10px;
+	}
+}

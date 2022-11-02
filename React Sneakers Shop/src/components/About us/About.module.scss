@@ -1,0 +1,37 @@
+.about {
+	background-color: #5680E9;
+	margin-top: 20px;
+
+	.inner {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		@media (max-width:920px) {
+			flex-direction: column;
+		}
+	}
+
+	.left {
+		flex: calc(650px/1300px *100%); 
+		padding: 50px;
+	}
+
+	h3 {
+		font-weight: bold;
+		color: #fff;
+		font-size: 25px;
+		margin-bottom: 15px;
+	}
+
+	p {
+		max-width: 500px;
+		color: #fff;
+		line-height: 30px;
+
+		@media (max-width:920px) {
+			line-height: 15px;
+			font-size: 14px;
+		}
+	}
+}
