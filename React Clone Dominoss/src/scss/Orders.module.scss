@@ -1,0 +1,228 @@
+@import './variables.scss';
+
+.inner {
+    margin: 20px auto;
+    padding: 0 10px;
+    
+    .rules {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        padding: 10px;
+        background: $color--red;
+    
+    }
+
+    .delete {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .column {
+        display: flex;
+        gap: 10px;
+    }
+
+    .counted {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p { 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #cc0000;
+        }
+    }
+    
+}
+
+.container {
+    overflow: auto;
+    height: calc(100vh - 185px);
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+
+    @media (min-width: 750px) {
+       
+        &::-webkit-scrollbar  {
+            background-color: #000;
+            width: 7px;
+           }
+    
+           &::-webkit-scrollbar-thumb {
+            background: #202020;
+            border-radius: 10px;
+           }
+    }
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08), 0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.card__half {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.pizza__img {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+
+    @media (min-width: 750px) {
+        width: 170px;
+        height: 150px;
+    }
+
+    @media (min-width: 100px) {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: auto;
+    color: $color-black;
+}
+
+.item__inner {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quan {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.sizes__block {
+    margin-bottom: 10px;
+}
+
+
+.discount__inner {
+    margin: 20px auto;
+    max-width: 95%;
+    padding: 0 15px;
+    text-align: center;
+
+    .discount__cart {
+        border-radius: 10px;
+        background: #FFFFFF;    
+        box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08), 0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+
+        @media (min-width: 750px) {
+            width: 400px;
+            margin: 0 auto;
+        }
+    }
+    
+    img {
+        border-radius: 10px;
+
+        @media (min-width: 750px) {
+           height: 300px;
+           width: 100%;
+        }
+    }
+
+    .discount__content {
+        padding: 15px 15px;
+        text-align: center;
+
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.empty__cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 50px);
+    text-align: center;
+
+    p {
+        font-size: 20px;
+        color: $color-white;
+        font-weight: normal;
+    }
+}
+
+.constructor__ingridients {
+   width: 330px;
+   overflow: auto;
+   display: flex;
+   align-items: center;
+   padding: 5px 0;
+}
+
+.btn__delete {
+    @extend .btn__controlls;
+    color: $color-black;
+    background-color: $color-white;
+    position: absolute;
+    left: -7px;
+    top: -5px;
+    
+}
+
+.controllers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .circle {
+        font-size: $fs-text;
+        color: $color-white;
+        background-color: $color--red;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.basket {
+    font-size: 22px;
+    color: #cc0000;
+}

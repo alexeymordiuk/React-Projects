@@ -1,0 +1,49 @@
+@import './variables.scss';
+
+.container {
+    overflow: auto;
+    height: calc(100vh - 150px);
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    position: relative;
+
+    @media (min-width: 750px) {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+        
+        &::-webkit-scrollbar  {
+            background-color: #000;
+            width: 7px;
+           }
+    
+           &::-webkit-scrollbar-thumb {
+            background: #202020;
+            border-radius: 10px;
+           }
+    }
+}
+
+.spinner {
+    height: calc(100vh - 50px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.spinner__loader {
+    font-size: 120px;
+    color: $color-white;
+    animation: circle 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite;
+}
+
+@keyframes circle {
+    0%, 15% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

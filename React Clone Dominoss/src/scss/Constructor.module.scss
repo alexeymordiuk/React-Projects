@@ -1,0 +1,80 @@
+@import './variables.scss';
+
+.container {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: calc(100vh - 150px);
+}
+
+.block {
+    padding: 10px 5px;
+    border: 1px solid  $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: $transition;
+
+
+    h2 {
+        font-size: 23px;
+        color: $color-white;
+        font-weight: 500;
+       
+    }
+}
+
+.items {
+    margin-top: 10px;
+    background: #FFFFFF;    
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08), 0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.ingridients {
+    width: 330px;
+    margin-top: 10px;
+    gap: 15px;
+    overflow: auto;
+}
+
+.column {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    width: 100px;
+    border: 1px solid $color-black;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        display: flex;
+        gap: 15px;
+
+        img {
+            border-radius: 10px;
+            width: 200px;
+        }
+    }
+
+    .text__inner {
+        margin-top: 10px;
+        display: flex;
+        gap: 40px;
+    }
+}

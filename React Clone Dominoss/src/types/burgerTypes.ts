@@ -1,0 +1,21 @@
+export type BurgerProps = {
+    price: number;
+    name: string;
+    imageUrl: string;
+    ingredients: string;
+    img1: string;
+    img2: string;
+    img3: string;
+    img4: string;
+    img5: string;
+    text1: string;
+    text2: string;
+    text3: string;
+    text4: string;
+    text5: string;
+    sizes: number[];
+    id: string;
+    types: number[];
+    count: number;
+    about: string;
+  };

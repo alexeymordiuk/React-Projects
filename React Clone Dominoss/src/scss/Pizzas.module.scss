@@ -1,0 +1,322 @@
+@import './variables.scss';
+
+.container {
+    overflow: auto;
+    height: calc(100vh - 150px);
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    position: relative;
+
+    @media (min-width: 750px) {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+
+        &::-webkit-scrollbar  {
+            background-color: #000;
+            width: 7px;
+           }
+    
+           &::-webkit-scrollbar-thumb {
+            background: #202020;
+            border-radius: 10px;
+           }
+    }
+}
+
+.card {
+    border-radius: 10px;
+    background: #FFFFFF;    
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08), 0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+
+    .pizza__img {
+        border-radius: 10px 10px 0px 0px;
+        margin-bottom: 10px;
+        width: 1000px;
+        cursor: pointer;
+        transition: opacity $transition;
+
+        &:active {
+            opacity: 0.4;
+        }
+
+        @media (min-width: 750px) {
+            height: 20vw;
+        }
+
+    }
+
+    .about {
+        padding: 0 10px 10px 10px;
+        border-bottom: 1px solid gray;
+        margin-bottom: 5px;
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .to__cart {
+        padding: 0 10px 20px 10px;
+
+        h2 {
+            font-size: 17px;
+            color: $color-black;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        .add {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+    }
+
+    .ingredients {
+        padding: 0 10px 20px 10px;
+        font-size: $fs-text;
+        color: $color-black;
+        font-weight: 400;
+        border-bottom: 1px solid gray;
+        margin-bottom: 15px;
+        transition: ingredients  0.3s ease-in-out;
+    }
+
+    .inner {
+        display: flex;
+        align-items: center;
+        overflow: auto;
+        margin-top: 10px;
+        flex-shrink: 0;
+        width: calc(100vw - 40px);
+
+        &::-webkit-scrollbar  {
+            background-color: none;
+            height: 2px;
+           }
+    
+           &::-webkit-scrollbar-thumb {
+            background: #202020;
+            border-radius: 7px;
+           }
+
+        @media (min-width: 750px) {
+            width: calc(100vw - 600px);
+        }
+
+        @media (min-width: 900px) {
+            width: calc(100vw - 960px);
+        }
+
+        @media (min-width: 1400px) {
+            width: calc(100vw - 1300px);
+        }
+
+        @media (min-width: 1800px) {
+            width: calc(100vw - 1700px);
+        }
+
+        .ingr {
+            height: 80px;
+            width: 80px;
+            border: 1px solid #A9A9A9;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .column {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           width: 100px;
+           flex-shrink: 0;
+        }
+
+    }
+
+}
+
+.cart__menu {
+    display: none;
+    width: 90%;
+    border-radius: 15px;
+    background: #FFFFFF;    
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08), 0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    transition: $transition;
+    top: 150px;
+
+    @media (min-width: 750px) {
+        transform: translate(-250%);
+        width: 50%;
+    }
+
+    @media (min-width: 900px) {
+        transform: translateX(-350%);
+        left: 470px;
+        width: 30%;
+    }
+
+    .content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .type__choose {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       text-align: center;
+       margin-bottom: 15px;
+       margin-top: 15px;
+    }
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .options {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        li {
+            color: $color-black;
+            font-size: $fs-text;
+            padding: 4px 0;
+            background-color: #F3F3F3;
+            text-align: center;
+            border-radius: 5px;
+            transition: color $transition;
+            font-weight: 300;
+            cursor: pointer;
+        }
+    }
+
+    .count {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .controllers {
+        display: flex;
+        align-items: center;
+    }
+
+    .circle {
+        font-size: $fs-text;
+        color: $color-white;
+        background-color: $color--red;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+    }
+
+    .price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.active {
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+} 
+
+.active__type {
+    background-color: $color--red!important;
+    color: $color-white!important;
+}
+
+.about__burger {
+    font-size: 15px;
+    font-weight: 300;
+    color: $color-black;
+    border-bottom: 1px solid gray;
+    padding: 0 10px 10px 10px;
+    margin-bottom: 5px;
+}
+
+.options__constructor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 50px 0;
+}
+
+.list__constructor {
+    width: 100%;
+    text-align: center;
+
+    li {
+        border-radius: 5px;
+        padding: 7px 0;
+        border: 1px solid $color-white;
+        color: $color-white;
+        font-size: 16px;
+    }
+}
+
+.add__constructor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    p {
+        font-size: 16px;
+        color: $color-white;
+        
+    }
+}
+
+.spinner {
+    height: calc(100vh - 50px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.spinner__loader {
+    font-size: 120px;
+    color: $color-white;
+    animation: circle 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite;
+}
+
+@keyframes circle {
+    0%, 15% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+

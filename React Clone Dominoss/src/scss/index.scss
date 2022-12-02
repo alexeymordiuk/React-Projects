@@ -1,0 +1,259 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: #101010;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	 outline: none;
+}
+
+a, a:link, a:visited  {
+    color: inherit; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+html[data-theme='light'] {
+
+    body {
+        background-color: #ffff;
+        transition: background-color 200ms linear;
+    }
+
+    .NavBar_top__Xr1me {
+        background-color: #ffff;
+        transition: background-color 400ms linear;
+
+        a {
+            color: #000;
+            transition: color 500ms linear;
+        }
+    }
+
+    .NavBar_header__22zLn {
+        background-color: #ffff;
+        transition: background-color 400ms linear;
+    }
+
+    .NavBar_text__lHX4p {
+
+        a {
+            color: #000;
+            transition: color 500ms linear;
+        }
+    }
+
+    .NavBar_light__lLinj {
+        display: none;
+    }
+
+    .Form_inputs__Rsr2N {
+        color: #000;
+    }
+
+    input::placeholder {
+        color: #000;
+    }
+
+    .Restaraunt_wrraper__VrRGM h2{
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+
+    .Restaraunt_title__YwZEo {
+        color: #000;
+    }
+
+    .Restaraunt_log__k9CkM {
+        border-bottom: 1px solid #000;
+    }
+
+    .Restaraunt_log__k9CkM div p {
+        color: #000;
+    }
+
+    .Restaraunt_delete__white__94Hjm {
+        color: #000;
+    }
+
+    .Restaraunt_log__k9CkM button {
+        color: #000;
+    }
+
+    .Form_container__Qzs-R p {
+        color: #000;
+        font-weight: 300;
+    }
+
+    .Orders_empty__cart__V\+1VG p {
+        color: #000;
+    }
+
+    .Constructor_block__utOn5 {
+        border: 1px solid #000;
+    }
+
+    .Constructor_block__utOn5 h2 {
+        color: #000;
+    }
+
+    .Constructor_delete__white__Z\+wko {
+        color: #000;
+    }
+
+    .Pizzas_list__constructor__JPdbX li {
+        border: 1px solid #000;
+    }
+
+    .Pizzas_list__constructor__JPdbX li {
+        color: #000;
+    }
+
+    .Pizzas_spinner__loader__B5i\+U {
+        color: #000;
+    }
+
+    .Burgers_spinner__loader__qUuIZ {
+        color: #000;
+    }
+
+}
+
+html[data-theme='dark'] {
+    body {
+        background-color: #101010;
+        transition: background-color 200ms linear;
+    }
+
+    .NavBar_top__Xr1me {
+        background-color: #202020;
+        transition: background-color 400ms linear;
+
+        a {
+            color: #ffff;
+            transition: color 500ms linear;
+        }
+    }
+
+    .NavBar_header__22zLn {
+        background-color: #202020;
+        transition: background-color 400ms linear;
+    }
+
+    .NavBar_text__lHX4p {
+
+        a {
+            color: #ffff;
+            transition: color 500ms linear;
+        }
+    }
+
+    .NavBar_dark__Jx6se {
+        display: none;
+    }
+
+    .NavBar_light__lLinj {
+        color: #ffff;
+
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: #ff0000;
+        }
+    }
+
+    .Form_inputs__Rsr2N {
+        color: #ffff;
+    }
+
+    input::placeholder {
+        color: #ffff;
+    }
+}
